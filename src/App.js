@@ -51,7 +51,7 @@ function App() {
   // Calculate the values for the bar chart
   const chartData = {
     x: filteredData.map((row) => row.title),
-    y: filteredData.map((row) => row[numericColumn]),
+    y: filteredData.map((row) => row.price),
     type: 'bar',
   };
 
